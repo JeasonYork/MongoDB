@@ -1,0 +1,88 @@
+b) Liste des bases de données disponibles:
+admin
+config
+local
+sample
+(c) liste des collections de la BDD sample :
+books
+(d) afficher un document depuis la collection bookd
+{'_id': 1,
+ 'authors': ['W. Frank Ableson', 'Charlie Collins', 'Robi Sen'],
+ 'categories': ['Open Source', 'Mobile'],
+ 'isbn': '1933988673',
+ 'longDescription': 'Android is an open source mobile phone platform based on '
+                    'the Linux operating system and developed by the Open '
+                    'Handset Alliance, a consortium of over 30 hardware, '
+                    'software and telecom companies that focus on open '
+                    'standards for mobile devices. Led by search giant, '
+                    'Google, Android is designed to deliver a better and more '
+                    'open and cost effective mobile experience.    Unlocking '
+                    "Android: A Developer's Guide provides concise, hands-on "
+                    'instruction for the Android operating system and '
+                    'development tools. This book teaches important '
+                    'architectural concepts in a straightforward writing style '
+                    'and builds on this with practical and useful examples '
+                    'throughout. Based on his mobile development experience '
+                    'and his deep knowledge of the arcane Android technical '
+                    'documentation, the author conveys the know-how you need '
+                    'to develop practical applications that build upon or '
+                    'replace any of Androids features, however small.    '
+                    "Unlocking Android: A Developer's Guide prepares the "
+                    'reader to embrace the platform in easy-to-understand '
+                    'language and builds on this foundation with re-usable '
+                    'Java code examples. It is ideal for corporate and '
+                    'hobbyists alike who have an interest, or a mandate, to '
+                    "deliver software functionality for cell phones.    WHAT'S "
+                    "INSIDE:        * Android's place in the market      * "
+                    'Using the Eclipse environment for Android '
+                    'development      * The Intents - how and why they are '
+                    'used      * Application classes:            o '
+                    'Activity            o Service            o '
+                    'IntentReceiver       * User interface design      * Using '
+                    'the ContentProvider to manage data      * Persisting data '
+                    'with the SQLite database      * Networking examples      '
+                    '* Telephony applications      * Notification methods      '
+                    '* OpenGL, animation & multimedia      * Sample '
+                    'Applications  ',
+ 'pageCount': 416,
+ 'publishedDate': datetime.datetime(2009, 4, 1, 7, 0),
+ 'shortDescription': "Unlocking Android: A Developer's Guide provides concise, "
+                     'hands-on instruction for the Android operating system '
+                     'and development tools. This book teaches important '
+                     'architectural concepts in a straightforward writing '
+                     'style and builds on this with practical and useful '
+                     'examples throughout.',
+ 'status': 'PUBLISH',
+ 'thumbnailUrl': 'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg',
+ 'title': 'Unlocking Android'}
+(e) Les bombre de document de la collection:  431
+
+------------------Exploration de la base-----------------
+(a.1) Le nombre de livres avec plus de 400 pages 157
+(a.2) Le nombre de livres avec plus de 400 pages et pbuliés:  155
+(b) Afficher le nombre de livres ayant le mot-clé Android dans leur description (brève ou longue):  4
+
+(c) Liste des catégories distincts pour l'index 0:  ['Internet', 'Perl', 'PowerBuilder', 'Next Generation Databases', 'PHP', 'XML', 'Programming', 'Miscellaneous', 'Business', 'In Action', 'Microsoft .NET', 'Java', 'Mobile Technology', 'internet', 'Computer Graphics', 'Client-Server', 'java', 'Microsoft/.NET', 'Software Engineering', 'Networking', 'Open Source', 'Web Development', 'Theory', 'Object-Technology Programming', 'Microsoft', 'SOA', 'Algorithmic Art', 'Python', 'Object-Oriented Programming']
+
+(c) Liste des catégories distincts pour l'index 1:  ['S', '.NET', 'Business', 'P', 'Theory', 'Open Source', 'Software Engineering', 'Networking', 'Internet', 'Client-Server', 'Python', '', 'Mobile', 'Computer Graphics', 'Perl', 'Software Development', 'Java']
+
+(d)Le nombre de livres qui contiennent des noms de langages suivant dans leur description longue : Python, Java, C++, Scala:  263
+
+(e)Afficher diverses informations statistiques:
+ {'Internet': {'Categorie': 'Internet', 'Max Pages': 912, 'Min Pages': 0, 'Avg Pages': 441.2439024390244}, 'Perl': {'Categorie': 'Perl', 'Max Pages': 504, 'Min Pages': 304, 'Avg Pages': 385.3333333333333}, 'PowerBuilder': {'Categorie': 'PowerBuilder', 'Max Pages': 550, 'Min Pages': 362, 'Avg Pages': 433.7142857142857}, '': {'Categorie': '', 'Max Pages': 368, 'Min Pages': 200, 'Avg Pages': 284.0}, 'Next Generation Databases': {'Categorie': 'Next Generation Databases', 'Max Pages': 0, 'Min Pages': 0, 'Avg Pages': 0.0}, 'PHP': {'Categorie': 'PHP', 'Max Pages': 552, 'Min Pages': 552, 'Avg Pages': 552.0}, 'Miscella': {'Categorie': 'Miscella', 'Max Pages': 0, 'Min Pages': 0, 'Avg Pages': 0.0}, 'XML': {'Categorie': 'XML', 'Max Pages': 680, 'Min Pages': 304, 'Avg Pages': 482.0}, 'Client Server': {'Categorie': 'Client Server', 'Max Pages': 368, 'Min Pages': 368, 'Avg Pages': 368.0}, 'Programming': {'Categorie': 'Programming', 'Max Pages': 570, 'Min Pages': 0, 'Avg Pages': 362.1666666666667}, 'Miscellaneous': {'Categorie': 'Miscellaneous', 'Max Pages': 1096, 'Min Pages': 316, 'Avg Pages': 706.0}, 'Business': {'Categorie': 'Business', 'Max Pages': 696, 'Min Pages': 180, 'Avg Pages': 404.1666666666667}, 'In Action': {'Categorie': 'In Action', 'Max Pages': 0, 'Min Pages': 0, 'Avg Pages': 0.0}, 'Java': {'Categorie': 'Java', 'Max Pages': 1088, 'Min Pages': 0, 'Avg Pages': 412.21875}, 'Microsoft .NET': {'Categorie': 'Microsoft .NET', 'Max Pages': 848, 'Min Pages': 0, 'Avg Pages': 437.02941176470586}, 'Mobile Technology': {'Categorie': 'Mobile Technology', 'Max Pages': 504, 'Min Pages': 0, 'Avg Pages': 296.5}, 'internet': {'Categorie': 'internet', 'Max Pages': 400, 'Min Pages': 400, 'Avg Pages': 400.0}, 'Computer Graphics': {'Categorie': 'Computer Graphics', 'Max Pages': 840, 'Min Pages': 328, 'Avg Pages': 520.3333333333334}, 'Software Development': {'Categorie': 'Software Development', 'Max Pages': 600, 'Min Pages': 600, 'Avg Pages': 600.0}, 'Client-Server': {'Categorie': 'Client-Server', 'Max Pages': 1101, 'Min Pages': 220, 'Avg Pages': 516.0}, 'java': {'Categorie': 'java', 'Max Pages': 0, 'Min Pages': 0, 'Avg Pages': 0.0}, 'Microsoft/.NET': {'Categorie': 'Microsoft/.NET', 'Max Pages': 0, 'Min Pages': 0, 'Avg Pages': 0.0}, 'Software Engineering': {'Categorie': 'Software Engineering', 'Max Pages': 544, 'Min Pages': 0, 'Avg Pages': 287.75}, 'Networking': {'Categorie': 'Networking', 'Max Pages': 591, 'Min Pages': 0, 'Avg Pages': 366.42857142857144}, 'Open Source': {'Categorie': 'Open Source', 'Max Pages': 532, 'Min Pages': 416, 'Avg Pages': 474.0}, 'Web Development': {'Categorie': 'Web Development', 'Max Pages': 688, 'Min Pages': 300, 'Avg Pages': 441.47058823529414}, 'P': {'Categorie': 'P', 'Max Pages': 512, 'Min Pages': 512, 'Avg Pages': 512.0}, 'Theory': {'Categorie': 'Theory', 'Max Pages': 591, 'Min Pages': 280, 'Avg Pages': 420.42857142857144}, 'Object-Technology Programming': {'Categorie': 'Object-Technology Programming', 'Max Pages': 200, 'Min Pages': 200, 'Avg Pages': 200.0}, '.NET': {'Categorie': '.NET', 'Max Pages': 925, 'Min Pages': 925, 'Avg Pages': 925.0}, 'S': {'Categorie': 'S', 'Max Pages': 350, 'Min Pages': 350, 'Avg Pages': 350.0}, 'Computer Graph': {'Categorie': 'Computer Graph', 'Max Pages': 400, 'Min Pages': 400, 'Avg Pages': 400.0}, 'Microsoft': {'Categorie': 'Microsoft', 'Max Pages': 925, 'Min Pages': 344, 'Avg Pages': 572.375}, 'SOA': {'Categorie': 'SOA', 'Max Pages': 250, 'Min Pages': 250, 'Avg Pages': 250.0}, 'Algorithmic Art': {'Categorie': 'Algorithmic Art', 'Max Pages': 0, 'Min Pages': 0, 'Avg Pages': 0.0}, 'Mobile': {'Categorie': 'Mobile', 'Max Pages': 416, 'Min Pages': 416, 'Avg Pages': 416.0}, 'Python': {'Categorie': 'Python', 'Max Pages': 688, 'Min Pages': 350, 'Avg Pages': 482.3333333333333}, 'Object-Oriented Programming': {'Categorie': 'Object-Oriented Programming', 'Max Pages': 512, 'Min Pages': 350, 'Avg Pages': 408.5}}
+
+(f)Extraire l'année, le mois et le jour de publishedDate:
+ {'Android in Action, Second Edition': {'titre': 'Android in Action, Second Edition', 'date': datetime.datetime(2011, 1, 14, 8, 0), 'annee': 2011, 'mois': 1, 'jour': 14}, 'Specification by Example': {'titre': 'Specification by Example', 'date': datetime.datetime(2011, 6, 3, 7, 0), 'annee': 2011, 'mois': 6, 'jour': 3}, 'Flex 4 in Action': {'titre': 'Flex 4 in Action', 'date': datetime.datetime(2010, 11, 15, 8, 0), 'annee': 2010, 'mois': 11, 'jour': 15}, 'Flex on Java': {'titre': 'Flex on Java', 'date': datetime.datetime(2010, 10, 15, 7, 0), 'annee': 2010, 'mois': 10, 'jour': 15}, 'Griffon in Action': {'titre': 'Griffon in Action', 'date': datetime.datetime(2012, 6, 4, 7, 0), 'annee': 2012, 'mois': 6, 'jour': 4}, 'OSGi in Depth': {'titre': 'OSGi in Depth', 'date': datetime.datetime(2011, 12, 12, 8, 0), 'annee': 2011, 'mois': 12, 'jour': 12}, 'Brownfield Application Development in .NET': {'titre': 'Brownfield Application Development in .NET', 'date': datetime.datetime(2010, 4, 16, 7, 0), 'annee': 2010, 'mois': 4, 'jour': 16}, 'MongoDB in Action': {'titre': 'MongoDB in Action', 'date': datetime.datetime(2011, 12, 12, 8, 0), 'annee': 2011, 'mois': 12, 'jour': 12}, 'jQuery in Action, Second Edition': {'titre': 'jQuery in Action, Second Edition', 'date': datetime.datetime(2010, 6, 1, 7, 0), 'annee': 2010, 'mois': 6, 'jour': 1}, 'ASP.NET 4.0 in Practice': {'titre': 'ASP.NET 4.0 in Practice', 'date': datetime.datetime(2011, 5, 15, 7, 0), 'annee': 2011, 'mois': 5, 'jour': 15}, 'Hello! Python': {'titre': 'Hello! Python', 'date': datetime.datetime(2012, 2, 13, 8, 0), 'annee': 2012, 'mois': 2, 'jour': 13}, 'iOS in Practice': {'titre': 'iOS in Practice', 'date': datetime.datetime(2013, 11, 1, 7, 0), 'annee': 2013, 'mois': 11, 'jour': 1}, 'The Quick Python Book, Second Edition': {'titre': 'The Quick Python Book, Second Edition', 'date': datetime.datetime(2010, 1, 1, 8, 0), 'annee': 2010, 'mois': 1, 'jour': 1}, 'Spring Dynamic Modules in Action': {'titre': 'Spring Dynamic Modules in Action', 'date': datetime.datetime(2010, 9, 4, 7, 0), 'annee': 2010, 'mois': 9, 'jour': 4}, 'Android in Practice': {'titre': 'Android in Practice', 'date': datetime.datetime(2011, 9, 30, 7, 0), 'annee': 2011, 'mois': 9, 'jour': 30}, 'Hello! HTML5 & CSS3': {'titre': 'Hello! HTML5 & CSS3', 'date': datetime.datetime(2012, 10, 17, 7, 0), 'annee': 2012, 'mois': 10, 'jour': 17}, 'Spring Roo in Action': {'titre': 'Spring Roo in Action', 'date': datetime.datetime(2012, 4, 13, 7, 0), 'annee': 2012, 'mois': 4, 'jour': 13}, 'SOA Governance in Action': {'titre': 'SOA Governance in Action', 'date': datetime.datetime(2012, 7, 27, 7, 0), 'annee': 2012, 'mois': 7, 'jour': 27}, 'OSGi in Action': {'titre': 'OSGi in Action', 'date': datetime.datetime(2011, 4, 6, 7, 0), 'annee': 2011, 'mois': 4, 'jour': 6}, "SharePoint 2010 Site Owner's Manual": {'titre': "SharePoint 2010 Site Owner's Manual", 'date': datetime.datetime(2012, 2, 13, 8, 0), 'annee': 2012, 'mois': 2, 'jour': 13}}
+
+(g) Afficher les 20 premiers auteurs non vides dans l'ordre chronologique avec les nouveaux attributs:
+ {'auteurs': ['Andres Almiray', 'Bernerd Allmon', 'Charlie Collins', 'Dan Orlando', 'Danno Ferrin', 'Faisal Abid', 'Gojko Adzic', 'Jeremy Anderson', 'Joel Hooks', 'John C. Bland II', 'Nick Lo', 'Rob Allen', 'Robi Sen', 'Robi Sen', 'Satnam Alag', 'Steven Brown', 'Tariq Ahmed', 'Tariq Ahmed with Jon Hirschi', 'W. Frank Ableson', 'W. Frank Ableson']}
+Nombre d'éléments dans auteurs : 20
+
+(h) Nombre de publications pour les 10 premiers auteurs les plus prolifiques :
+ [{'_id': None, 'nombre_articles': 37, 'auteur': None}, {'_id': 'Vikram Goyal', 'nombre_articles': 12, 'auteur': 'Vikram Goyal'}, {'_id': 'Don Jones', 'nombre_articles': 6, 'auteur': 'Don Jones'}, {'_id': 'Craig Walls', 'nombre_articles': 4, 'auteur': 'Craig Walls'}, {'_id': 'Christian Bauer', 'nombre_articles': 4, 'auteur': 'Christian Bauer'}, {'_id': 'Jeffrey Palermo', 'nombre_articles': 3, 'auteur': 'Jeffrey Palermo'}, {'_id': 'Ted Neward', 'nombre_articles': 3, 'auteur': 'Ted Neward'}, {'_id': 'Richard Siddaway', 'nombre_articles': 3, 'auteur': 'Richard Siddaway'}, {'_id': 'David A. Black', 'nombre_articles': 3, 'auteur': 'David A. Black'}, {'_id': 'Jon Skeet', 'nombre_articles': 3, 'auteur': 'Jon Skeet'}]
+
+(i) Distribution du nombre d'auteurs :
+ [{'_id': 0, 'nombre_publications': 37}, {'_id': 1, 'nombre_publications': 206}, {'_id': 2, 'nombre_publications': 105}, {'_id': 3, 'nombre_publications': 9}, {'_id': 4, 'nombre_publications': 47}, {'_id': 5, 'nombre_publications': 16}, {'_id': 6, 'nombre_publications': 6}, {'_id': 7, 'nombre_publications': 2}, {'_id': 8, 'nombre_publications': 3}]
+
+(j) Occurrence de chaque auteur selon son index :
+ [{'_id': {'auteur': 'Vikram Goyal', 'index': 'Vikram Goyal'}, 'occurrence': 12}, {'_id': {'auteur': 'Richard Siddaway', 'index': 'Richard Siddaway'}, 'occurrence': 6}, {'_id': {'auteur': 'Don Jones', 'index': 'Don Jones'}, 'occurrence': 6}, {'_id': {'auteur': 'Yehuda Katz', 'index': 'Yehuda Katz'}, 'occurrence': 5}, {'_id': {'auteur': 'Gavin King', 'index': 'Gavin King'}, 'occurrence': 5}, {'_id': {'auteur': 'Jon Skeet', 'index': 'Jon Skeet'}, 'occurrence': 5}, {'_id': {'auteur': 'Christian Bauer', 'index': 'Christian Bauer'}, 'occurrence': 5}, {'_id': {'auteur': 'Erik Hatcher', 'index': 'Erik Hatcher'}, 'occurrence': 4}, {'_id': {'auteur': 'Greg Low', 'index': 'Greg Low'}, 'occurrence': 4}, {'_id': {'auteur': 'Craig Walls', 'index': 'Craig Walls'}, 'occurrence': 4}, {'_id': {'auteur': 'Kalen Delaney', 'index': 'Kalen Delaney'}, 'occurrence': 4}, {'_id': {'auteur': 'David A. Black', 'index': 'David A. Black'}, 'occurrence': 3}, {'_id': {'auteur': 'Matthew Scarpino', 'index': 'Matthew Scarpino'}, 'occurrence': 3}, {'_id': {'auteur': 'Jeffrey Palermo', 'index': 'Jeffrey Palermo'}, 'occurrence': 3}, {'_id': {'auteur': 'Christopher Allen', 'index': 'Christopher Allen'}, 'occurrence': 3}, {'_id': {'auteur': 'Daniel Minoli', 'index': 'Daniel Minoli'}, 'occurrence': 3}, {'_id': {'auteur': 'W. Frank Ableson', 'index': 'W. Frank Ableson'}, 'occurrence': 3}, {'_id': {'auteur': 'Tim Hatton', 'index': 'Tim Hatton'}, 'occurrence': 3}, {'_id': {'auteur': 'Jeffery Hicks', 'index': 'Jeffery Hicks'}, 'occurrence': 3}, {'_id': {'auteur': 'Kimberly L. Tripp', 'index': 'Kimberly L. Tripp'}, 'occurrence': 3}]
